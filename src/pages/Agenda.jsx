@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import useGlobalReducer from "../hooks/useGlobalReducer";
-import { Link, useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
+import { ContactCard } from "../components/ContactCard.jsx"
 
 export const Agenda = () => {
     const { store, dispatch } = useGlobalReducer()

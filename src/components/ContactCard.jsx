@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from "react-router-dom"
 import useGlobalReducer from "../hooks/useGlobalReducer.jsx";
 
+
 export const ContactCard = (props) => {
 
 
@@ -14,7 +15,7 @@ export const ContactCard = (props) => {
         <div>
 
             <div className="card" style={{ width: "18rem" }}>
-                <img src="https://media.istockphoto.com/id/1337144146/vector/default-avatar-profile-icon-vector.jpg?s=612x612&w=0&k=20&c=BIbFwuv7FxTWvh5S3vB6bkT0Qv8Vn8N5Ffseq84ClGI=" className="card-img-top" alt="..." />
+                <img src="https://ashisheditz.com/wp-content/uploads/2024/06/frases-chidas-para-foto-de-perfil-de-facebook.jpg" className="card-img-top" alt="..." />
                 <div className="card-body">
                    <p className="card-text">{props.informacion.name}</p>
                    <p className="card-text">{props.informacion.email}</p>
