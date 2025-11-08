@@ -23,9 +23,9 @@ export const AddContact = () => {
     }
 
 
-    const forSubmit = (e) => {
+    const createAgenda = (e) => {
         e.preventDefault()
-        ///validaciopn pero deben ser todos los campos dentro del if 
+       
         if (!data.email || !data.name || !data.phone || !data.address) {
             alert("todos los campos son obligatorios")
             return;
@@ -63,7 +63,7 @@ export const AddContact = () => {
     return (
         <div className='container'>
             <h2>Add Contact</h2>
-            <form className="row g-3" onSubmit={forSubmit}>
+            <form className="row g-3" onSubmit={createAgenda}>
                 <div className="col-md-6">
                     <label htmlFor="inputEmail4" className="form-label">Email</label>
                     <input type="email" className="form-control" id="inputEmail4" placeholder='@email' value={data.email} onChange={formChange} name="email" />
@@ -82,7 +82,7 @@ export const AddContact = () => {
                 </div>
 
                 <div className="col-12">
-                    <button type="submit" className="btn btn-primary">Sign in</button>
+                    <button type="submit" className="btn btn-primary">Save</button>
                 </div>
             </form>
 

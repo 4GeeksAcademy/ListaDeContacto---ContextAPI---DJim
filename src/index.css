@@ -1,18 +1,23 @@
-.home-container {
-    background-image: url(https://ashisheditz.com/wp-content/uploads/2024/06/frases-chidas-para-una-foto-de-perfil.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+*{
+  color: #fff;
 }
 
+p{
+  color:blue;
+}
+
+
+
+
 #root {
-    background-image: url(https://ashisheditz.com/wp-content/uploads/2024/06/frases-chidas-para-una-foto-de-perfil.jpg);
-    background-repeat: no-repeat;
+    background-image: url(https://pbs.twimg.com/media/DLf9LmOV4AAAnqH?format=jpg&name=4096x4096);
+    background-repeat: repeat;
     background-size: cover;
 
 }
 
 nav {
-     background-image: url(https://ashisheditz.com/wp-content/uploads/2024/06/frases-chidas-para-una-foto-de-perfil.jpg);
+     background-image: url(https://pbs.twimg.com/media/DLf9LmOV4AAAnqH?format=jpg&name=4096x4096);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -81,7 +86,7 @@ nav {
 
 .create_contact{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: rgb(15, 139, 57));
+  color: rgb(15, 139, 57);
   text-align: center;
   font-size: 1.5rem;
   transition: all 0.5s ease-in-out;
@@ -89,7 +94,7 @@ nav {
 }
 
 .create_contact:hover{
-   color: rgb(42, 46, 45)44);
+   color: rgb(42, 46, 45)44;
     text-shadow:
     0 0 10px #fff,
     0 0 20px #fff,
@@ -97,4 +102,8 @@ nav {
     0 0 80px #0fa,
     0 0 120px #0fa;
 
+}
+
+h5{
+  text-align: start;
 }
