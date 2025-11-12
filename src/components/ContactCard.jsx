@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useNavigate } from "react-router-dom"
+import { useNavigate, Link, useActionData } from "react-router-dom"
 import useGlobalReducer from "../hooks/useGlobalReducer.jsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -12,13 +12,16 @@ import {
 
 
 export const ContactCard = (props) => {
+    const { store, dispatch } = useGlobalReducer()
+    const [openModal, setOpenModal] = useState(false);
+
 
      
    const deleteContact = async (id) => {
-    const { store, dispatch } = useGlobaleducer()
         try {
           
-          const response = await fetch("https://playground.4geeks.com/contact/agendas/david/contacts" + "/contacts" + `/${id}`, {
+          const response = await fetch("https://playground.4geeks.com/contact/agendas/david/contacts"  
+            + `/${id}`, {
             method: "DELETE",
           });
           if (!response.ok) {
@@ -58,12 +61,15 @@ export const ContactCard = (props) => {
                         <div className="ms-6">
                             <div className="col-md-10 d-flex justify-content-end mx-auto">
                                 <div className="pe-5">
-                                    <span>
+                                    <Link to={"/edit-contact/" + props.informacion.id}>
+                                    <span > 
+                    
                                         <FontAwesomeIcon icon={faPen} />
                                     </span>
+                                    </Link>
                                 </div>
                                 <div className="pe-5">
-                                    <span>
+                                    <span role="button" onClick = {()=>deleteContact(props.informacion.id) }>
                                         <FontAwesomeIcon icon={faTrashCan} />
                                     </span>
                                 </div>
